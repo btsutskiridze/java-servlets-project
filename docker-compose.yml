@@ -1,0 +1,9 @@
+version: '3'
+services:
+  servlets-demo:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./target:/usr/local/tomcat/webapps/target
+    network_mode: host
